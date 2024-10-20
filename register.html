@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatte</title>
+    <link rel="shortcut icon" href="image/logo.png">
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            background-color: #f8f9fa;
+            font-family: "Poppins", sans-serif;
+        }
+        .form-section {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .img-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .text-highlight {
+            color: #e6735c;
+        }
+        .form-section .btn {
+            background-color: #e6735c;
+            color: white;
+        }
+        /* position center on the screen */
+        .chatte {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="chatte container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 d-flex flex-column flex-md-row">
+                <!-- Form Section -->
+                <div class="col-md-6 form-section">
+                    <h3 class="text-center">Create Account</h3>
+                    <p class="text-center">Welcome from <span class="text-highlight">Chatte</span></p>
+                    <form action="main.html">
+                        <div class="mb-3">
+                            <label for="full-name" class="form-label">Full Name</label>
+                            <input type="text" id="full-name" class="form-control" placeholder="Enter your full name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <input type="submit" class="btn" value="Register">
+                        </div>
+                    </form>
+                    <p class="text-center mt-3">If you already have an account? <a href="login.html" class="text-highlight">Log In</a></p>
+                </div>
+                
+                <!-- Image Section -->
+                <div class="col-md-6 img-section d-none d-md-flex">
+                    <img src="image/banner1.jpg" alt="Welcome to Chatte" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Link -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

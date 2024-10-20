@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatte</title>
+    <link rel="shortcut icon" href="image/logo.png">
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            background-color: #f8f9fa;
+            font-family: "Poppins", sans-serif;
+        }
+        .form-section {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .img-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+        }
+        .img-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+           
+        }
+        .img-caption {
+            color: #e6735c;
+            font-size: 20px;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+        .text-highlight {
+            color: #e6735c;
+        }
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .form-section .btn {
+            background-color: #e6735c;
+            color: white;
+        }
+        .google-btn {
+            background-color: #4285F4;
+            color: white;
+        }
+        .google-btn img {
+            margin-right: 10px;
+        }
+        .remember-me {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+         /* position center on the screen */
+         .chatte {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="chatte container">
+        <div class="login row justify-content-center">
+            <div class="col-12 col-lg-10 d-flex flex-column flex-md-row">
+
+                <!-- Form Section -->
+                <div class="col-md-6 form-section">
+                    <h3 class="text-center">Log in</h3>
+                    <p class="text-center">Welcome from <span class="text-highlight">Chatte</span></p>
+                    <p class="text-center mt-3">If you already have an account? <a href="register.html" class="text-highlight">Register Now</a></p>
+                    <form action="main.html" >
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password">
+                        </div>
+
+                        
+                        <div class="d-flex align-items-center justify-content-between d-md-block d-lg-flex">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember Password</label>
+                            </div>
+                            <a href="#" class="text-highlight">Forget password?</a>
+                        </div>
+
+                        <div class="d-grid gap-2 mt-3">
+                            <input type="submit" class="btn" value="Sign in">
+                        </div>
+                    
+                        <div class="d-grid gap-2 mt-3">
+                            <button type="button" class="btn google-btn">
+                                <i class="bi bi-google mx-2"></i> Sign in with Google
+                            </button>
+                        </div>
+
+                    </form>
+                    
+                </div>
+                
+                <!-- Image Section -->
+                <div class="col-md-6 img-section d-none d-md-flex">
+                    <img src="image/banner1.jpg" alt="Welcome to Chatte" class="img-fluid">
+                    <p class="img-caption">Connect to your world in a smarter way</p>
+                </div>
+
+              
+            </div>
+        </div>
+    </div>
+    <script src="main.js">
+
+    </script>
+    <!-- Bootstrap JavaScript Link -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
